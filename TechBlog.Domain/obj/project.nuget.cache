@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Tj2G+ml0vZOD+SIlJ5qnCw77vZmtrFysrlAsx6jhrWBhEKHdX/XplGXi2k5qWdXQB2JLXAoPNhOI9ptwuhUw2w==",
+  "success": true,
+  "projectFilePath": "C:\\projects\\Blog\\TechBlog\\TechBlog.Domain\\TechBlog.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leanw\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\leanw\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

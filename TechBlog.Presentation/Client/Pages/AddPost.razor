@@ -1,0 +1,27 @@
+@page "/addpost"
+@layout MainLayout
+@using TechBlog.Domain.Models
+@using Blazored.TextEditor
+
+
+@inject IJSRuntime JSRuntime;
+<Header Heading="WordDaze" SubHeading="Add Post"></Header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="editor">
+                <input @bind=@Title placeholder="Title" class="form-control" style="margin-bottom:10px" />
+                <div class="mb-3">
+                    @* <textarea class="form-control" @bind=@Post @ref="editor" @onkeyup=UpdateCharacterCount
+                        placeholder="Write your post" rows="25"></textarea> *@
+                    <TextEditor Title=@Title></TextEditor>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code{
+    protected string Title { get; set; }
+}

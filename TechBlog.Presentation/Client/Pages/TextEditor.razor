@@ -1,0 +1,84 @@
+@using Blazored.TextEditor;
+@using TechBlog.Domain.Models
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using System.Net.Http.Json;
+
+@inject NavigationManager navigationManager;
+@inject HttpClient _httpClient;
+@inject IJSRuntime jsRuntime;
+
+<BlazoredTextEditor @ref="@QuillHtml">
+    <ToolbarContent>
+        <select class="ql-header">
+            <option selected=""></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+        </select>
+        <span class="ql-formats">
+            <button class="ql-bold"></button>
+            <button class="ql-italic"></button>
+            <button class="ql-underline"></button>
+            <button class="ql-strike"></button>
+        </span>
+        <span class="ql-formats">
+            <select class="ql-color"></select>
+            <select class="ql-background"></select>
+        </span>
+        <span class="ql-formats">
+            <button class="ql-list" value="ordered"></button>
+            <button class="ql-list" value="bullet"></button>
+        </span>
+        <span class="ql-formats">
+            <button class="ql-link"></button>
+        </span>
+    </ToolbarContent>
+    <EditorContent>
+    </EditorContent>
+</BlazoredTextEditor>
+<br />
+<button class="btn btn-primary"
+        @onclick="SavePost">
+    Save
+</button>
+<br />
+<div>
+    <br />
+    @((MarkupString)QuillHTMLContent)
+    @QuillHTMLContent
+</div>
+<br />
+
+@code {
+
+    BlazoredTextEditor QuillHtml;
+    BlazoredTextEditor QuillNative;
+    string QuillHTMLContent;
+    [Parameter]
+    public string Title { get; set; }
+
+    public async void SavePost()
+    {
+        QuillHTMLContent = await this.QuillHtml.GetHTML();
+        BlogPost newPost = new BlogPost()
+        {
+            Title = Title,
+            Author = "Joe Bloggs",
+            Post = QuillHTMLContent,
+            Posted = DateTime.Now,
+        };
+        var response = await _httpClient.PostAsJsonAsync<BlogPost>("/api/BlogPost/AddBlogPost",newPost);
+        var contentStream = await response.Content.ReadAsStringAsync();       
+        var id = JsonSerializer.Deserialize<BlogPost>(contentStream).Id;
+
+        navigationManager.NavigateTo($"viewpost/{id}");
+    }
+    public async void InsertImage()
+    {
+        await this.QuillNative.InsertImage("images/BlazorHelpWebsite.gif");
+        StateHasChanged();
+    }
+}

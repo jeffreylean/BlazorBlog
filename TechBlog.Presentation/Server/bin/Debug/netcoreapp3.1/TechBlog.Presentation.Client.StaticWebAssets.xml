@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\projects\Blog\TechBlog\TechBlog.Presentation\Client\bin\Debug\netstandard2.1\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\projects\Blog\TechBlog\TechBlog.Presentation\Client\obj\Debug\netstandard2.1\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/Blazored.TextEditor" Path="C:\Users\leanw\.nuget\packages\blazored.texteditor\1.0.3\build\..\staticwebassets\" />
+</StaticWebAssets>

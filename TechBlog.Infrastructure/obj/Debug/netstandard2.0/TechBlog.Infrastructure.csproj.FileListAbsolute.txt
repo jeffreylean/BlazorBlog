@@ -1,0 +1,9 @@
+C:\projects\Blog\TechBlog\TechBlog.Infrastructure\bin\Debug\netstandard2.0\TechBlog.Infrastructure.deps.json
+C:\projects\Blog\TechBlog\TechBlog.Infrastructure\bin\Debug\netstandard2.0\TechBlog.Infrastructure.dll
+C:\projects\Blog\TechBlog\TechBlog.Infrastructure\bin\Debug\netstandard2.0\TechBlog.Infrastructure.pdb
+C:\projects\Blog\TechBlog\TechBlog.Infrastructure\obj\Debug\netstandard2.0\TechBlog.Infrastructure.csprojAssemblyReference.cache
+C:\projects\Blog\TechBlog\TechBlog.Infrastructure\obj\Debug\netstandard2.0\TechBlog.Infrastructure.AssemblyInfoInputs.cache
+C:\projects\Blog\TechBlog\TechBlog.Infrastructure\obj\Debug\netstandard2.0\TechBlog.Infrastructure.AssemblyInfo.cs
+C:\projects\Blog\TechBlog\TechBlog.Infrastructure\obj\Debug\netstandard2.0\TechBlog.Infrastructure.csproj.CoreCompileInputs.cache
+C:\projects\Blog\TechBlog\TechBlog.Infrastructure\obj\Debug\netstandard2.0\TechBlog.Infrastructure.dll
+C:\projects\Blog\TechBlog\TechBlog.Infrastructure\obj\Debug\netstandard2.0\TechBlog.Infrastructure.pdb

@@ -1,0 +1,35 @@
+@layout MainLayout;
+@page "/viewpost/{postId}";
+@using TechBlog.Domain.Models
+@using Markdig;
+
+@inject HttpClient _httpClient;
+
+<Header Heading="@BlogPost.Title" Author="@BlogPost.Author" PostedDate="@BlogPost.Posted" ImgUrl="@BlogPost.ImageUrl"></Header>
+
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                @((MarkupString)BlogPost.Post)
+            </div>
+        </div>
+    </div>
+</article>
+
+@code{
+    [Parameter] public string PostId { get; set; }
+
+    protected BlogPost BlogPost { get; set; } = new BlogPost();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadBlogPost();
+    }
+
+    private async Task LoadBlogPost()
+    {
+        BlogPost = await _httpClient.GetFromJsonAsync<BlogPost>($"/api/BlogPost/GetBlogPostById?id={PostId}");
+        BlogPost.Post = BlogPost.Post;
+    }
+}

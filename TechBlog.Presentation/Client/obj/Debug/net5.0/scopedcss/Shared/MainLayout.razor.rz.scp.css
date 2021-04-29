@@ -1,0 +1,10 @@
+.content-layout[b-y4967ao09t]{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media only screen and (min-width:992px){
+    .content-layout[b-y4967ao09t]{
+        margin-top: 66.6px;
+    }
+}

@@ -1,0 +1,16 @@
+@using TechBlog.Domain.Models
+@using Markdig;
+
+<div class="card post-preview-card">
+    <img src="img/PostPreviewDefaultPic.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@blogPost.Title</h5>
+        <p class="card-text">@((MarkupString)blogPost.PostSummary)</p>
+        <a href="/ViewPost/@blogPost.Id" class="btn btn-primary">Read More</a>
+    </div>
+</div>
+
+@code{
+
+    [Parameter] public BlogPost blogPost { get; set; }
+}

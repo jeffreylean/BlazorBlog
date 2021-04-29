@@ -1,0 +1,12 @@
+C:\projects\Blog\TechBlog\TechBlog.Application\bin\Debug\netstandard2.0\TechBlog.Domain.dll
+C:\projects\Blog\TechBlog\TechBlog.Application\obj\Debug\netstandard2.0\TechBlog.Application.csprojAssemblyReference.cache
+C:\projects\Blog\TechBlog\TechBlog.Application\obj\Debug\netstandard2.0\TechBlog.Application.AssemblyInfoInputs.cache
+C:\projects\Blog\TechBlog\TechBlog.Application\obj\Debug\netstandard2.0\TechBlog.Application.AssemblyInfo.cs
+C:\projects\Blog\TechBlog\TechBlog.Application\bin\Debug\netstandard2.0\TechBlog.Application.deps.json
+C:\projects\Blog\TechBlog\TechBlog.Application\bin\Debug\netstandard2.0\TechBlog.Application.dll
+C:\projects\Blog\TechBlog\TechBlog.Application\bin\Debug\netstandard2.0\TechBlog.Application.pdb
+C:\projects\Blog\TechBlog\TechBlog.Application\bin\Debug\netstandard2.0\TechBlog.Domain.pdb
+C:\projects\Blog\TechBlog\TechBlog.Application\obj\Debug\netstandard2.0\TechBlog.Application.csproj.CoreCompileInputs.cache
+C:\projects\Blog\TechBlog\TechBlog.Application\obj\Debug\netstandard2.0\TechBlog.Application.csproj.CopyComplete
+C:\projects\Blog\TechBlog\TechBlog.Application\obj\Debug\netstandard2.0\TechBlog.Application.dll
+C:\projects\Blog\TechBlog\TechBlog.Application\obj\Debug\netstandard2.0\TechBlog.Application.pdb

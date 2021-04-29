@@ -1,0 +1,20 @@
+/* /Pages/BlogPostPreview.razor.rz.scp.css */
+.post-preview-card[b-pfajnvelwy]{
+    box-shadow: 0.8rem 1.4rem 3.8rem rgb(39 44 49 / 6%), 1px 3px 8px rgb(39 44 49 / 3%);
+    border-color: white;
+}
+/* /Pages/Index.razor.rz.scp.css */
+.PostPreviewItem[b-ewo8msgl4q] {
+margin-bottom: 10px;
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
+.content-layout[b-y4967ao09t]{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media only screen and (min-width:992px){
+    .content-layout[b-y4967ao09t]{
+        margin-top: 66.6px;
+    }
+}

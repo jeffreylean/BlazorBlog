@@ -1,0 +1,9 @@
+C:\projects\Blog\TechBlog\TechBlog.Domain\bin\Debug\netstandard2.0\TechBlog.Domain.deps.json
+C:\projects\Blog\TechBlog\TechBlog.Domain\bin\Debug\netstandard2.0\TechBlog.Domain.dll
+C:\projects\Blog\TechBlog\TechBlog.Domain\bin\Debug\netstandard2.0\TechBlog.Domain.pdb
+C:\projects\Blog\TechBlog\TechBlog.Domain\obj\Debug\netstandard2.0\TechBlog.Domain.csprojAssemblyReference.cache
+C:\projects\Blog\TechBlog\TechBlog.Domain\obj\Debug\netstandard2.0\TechBlog.Domain.AssemblyInfoInputs.cache
+C:\projects\Blog\TechBlog\TechBlog.Domain\obj\Debug\netstandard2.0\TechBlog.Domain.AssemblyInfo.cs
+C:\projects\Blog\TechBlog\TechBlog.Domain\obj\Debug\netstandard2.0\TechBlog.Domain.csproj.CoreCompileInputs.cache
+C:\projects\Blog\TechBlog\TechBlog.Domain\obj\Debug\netstandard2.0\TechBlog.Domain.dll
+C:\projects\Blog\TechBlog\TechBlog.Domain\obj\Debug\netstandard2.0\TechBlog.Domain.pdb

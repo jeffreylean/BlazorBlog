@@ -1,0 +1,33 @@
+@page "/";
+@using TechBlog.Domain.Models
+@using System.Net.Http;
+@using System.Text.Json;
+@using System.Text.Json.Serialization; 
+
+@inject HttpClient _httpClient;
+<Header Heading="Jeffrey's Tech Blog" SubHeading="Wonderful way to start getting smart..." />
+<div class="container">
+    <div class="row align-items-start">
+        @foreach (var post in blogPosts)
+        {
+            <div class="col-md-4 PostPreviewItem">
+                <BlogPostPreview BlogPost=@post></BlogPostPreview>
+            </div>
+        }
+    </div>
+</div>
+
+@code{
+    private List<BlogPost> blogPosts { get; set; } = new List<BlogPost>(); 
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadBlogPosts();
+    }
+
+    private async Task LoadBlogPosts()
+    {
+        var blogPostList=  await _httpClient.GetFromJsonAsync<List<BlogPost>>("/api/BlogPost/GetAllBlogPost");
+        blogPosts = blogPostList.OrderByDescending(p => p.Posted).ToList();
+    }
+}
